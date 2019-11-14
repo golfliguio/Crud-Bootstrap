@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Crud",
+    "\\Crud\\DAL",
+    "\\Crud\\DAL\\Model",
+    "\\Crud\\DAL\\Persistence"
+  ],
+  "SelectedNode": "\\Crud\\dbo.Pessoa.sql",
+  "PreviewInSolutionExplorer": false
+}
