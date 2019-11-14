@@ -39,7 +39,7 @@
           
               </asp:DropDownList>
 
-            <asp:Button ID="btnMenu" runat="server" Text="Acessar" CssClass="btn btn-light btn-sm" />
+            <asp:Button ID="btnMenu" runat="server" Text="Acessar" CssClass="btn btn-light btn-sm" OnClick="btnAcessar" />
 
             <p>
                 <asp:Label ID="lblMensagem" runat="server" />
