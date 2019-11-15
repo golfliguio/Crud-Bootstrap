@@ -19,7 +19,7 @@
     <form id="form1" runat="server">          
         <div class="jumbotron">
           <div class="container"></div>
-            <div class="span10 offset-1"</div>           
+            <div class="span10 offset-1"></div>           
                 <div class="row"></div>
                     <h3 class="well">Cadastro de Cliente</h3>
                     <br />
@@ -35,6 +35,11 @@
                       Email do Cliente :<br/>
                     <asp:TextBox ID="txtEmail" runat="server" placeholder="Email válido" Width="25%" CssClass="form-control" />
                      <br /><br />
+            <p>
+                <asp:Label ID="lblMenssagem" runat="server" />
+            </p>
+
+            <asp:Button ID="btnCadastro" runat="server" Text="Cadastrar" class="btn btn-success" />
         </div>
                              
     </form>
