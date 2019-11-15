@@ -1,14 +1,21 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Data.SqlClient;
 
 namespace DAL.Persistence
 {
-   public class Conexao
+    public class Conexao
     {
+
+
+        /// <summary>
+        /// 
+        /// (localdb)\MSSQLLocalDB
+        /// 
+        /// </summary>
+        /// 
+
+
+
         protected SqlConnection Con;//estabelecer conexao
         protected SqlCommand Cmd;//comandos sql
         protected SqlDataReader Dr;// ler registros query
@@ -18,13 +25,16 @@ namespace DAL.Persistence
         {
             try
             {
-                Con = new SqlConnection("Data Source=(localdb)/MSSQLLocalDB;Initial Catalog=master;Integrated Security=True");//conection string
+                Con = new SqlConnection("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=master;Integrated Security=True");//conection string
+                
+
+
                 Con.Open();
             }
             catch (Exception ex)
             {
 
-                throw new Exception (ex.Message);
+                throw new Exception(ex.Message);
             }
         }
 
@@ -37,7 +47,7 @@ namespace DAL.Persistence
             catch (Exception ex)
             {
 
-                throw new Exception (ex.Message);
+                throw new Exception(ex.Message);
             }
         }
     }

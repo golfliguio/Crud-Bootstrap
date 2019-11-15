@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
+﻿using DAL.Model;
+using DAL.Persistence;
+using System;
+
 
 namespace Site.Pages
 {
@@ -12,6 +10,29 @@ namespace Site.Pages
         protected void Page_Load(object sender, EventArgs e)
         {
 
+        }
+
+        protected void btnCadastrarCliente(object sender, EventArgs e)
+        {
+            try
+            {
+                Pessoa p = new Pessoa();
+
+                p.Nome = txtNome.Text;
+                p.Endereco = txtEndereco.Text;
+                p.Email = txtEndereco.Text;
+
+
+                PessoaDal d = new PessoaDal();
+                d.Gravar(p);//gravar pessoa
+
+                lblMenssagem.Text = " Cliente " + p.Nome + " - Cadastrado com sucesso!!";
+            }
+            catch (Exception ex)
+            {
+
+                lblMenssagem.Text = ex.Message;
+            }
         }
     }
 }

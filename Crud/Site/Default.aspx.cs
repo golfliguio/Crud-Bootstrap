@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace Site
 {
@@ -19,7 +14,7 @@ namespace Site
             //captura valor dropdownlist
 
             string Opcao = ddlMenu.SelectedValue;
-          
+
             switch (Opcao)
             {
                 case "0":

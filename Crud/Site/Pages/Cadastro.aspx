@@ -26,20 +26,45 @@
 
                     Nome do Cliente : <br />
                     <asp:TextBox ID="txtNome" runat="server" placeholder="Nome Completo" Width="45%" CssClass="form-control" />
-                    <br /><br />
+
+                    <asp:RequiredFieldValidator
+                        ID="requiredNome"
+                        runat="server"
+                        ControlToValidate="txtNome"
+                        ErrorMessage=" Por favor, digite o seu nome! "
+                        ForeColor="Red"
+                        />
+            <br /><br />
 
                     Endereço do Cliente :<br/>
                     <asp:TextBox ID="txtEndereco" runat="server" placeholder="Endereço Residencial" Width="50%" CssClass="form-control" />
+
+            <asp:RequiredFieldValidator
+                ID="requiredEndereco"
+                runat="server"
+                ControlToValidate="txtEndereco"
+                ErrorMessage=" Por favor, informe o se endereço! "
+                ForeColor="Red"
+                />
                      <br /><br />
 
                       Email do Cliente :<br/>
                     <asp:TextBox ID="txtEmail" runat="server" placeholder="Email válido" Width="25%" CssClass="form-control" />
+
+            <asp:RequiredFieldValidator
+                ID="requiredEmail"
+                runat="server"
+                ControlToValidate="txtEmail"
+                ErrorMessage=" Por favor, informe o e-mail "
+                ForeColor="Red"
+                />
                      <br /><br />
             <p>
                 <asp:Label ID="lblMenssagem" runat="server" />
             </p>
 
-            <asp:Button ID="btnCadastro" runat="server" Text="Cadastrar" class="btn btn-success" />
+            <asp:Button ID="btnCadastro" runat="server" Text="Cadastrar" class="btn-success btn-lg" OnClick="btnCadastrarCliente"/>
+             <a href="/Default.aspx" class="btn-primary btn-lg ">Voltar</a>
         </div>
                              
     </form>

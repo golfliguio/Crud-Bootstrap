@@ -1,8 +1,7 @@
-﻿using System;
+﻿using DAL.Model;
+using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Data.SqlClient;
-using DAL.Model;
 
 
 namespace DAL.Persistence
@@ -21,7 +20,7 @@ namespace DAL.Persistence
 
     public class PessoaDal : Conexao
     {
-    
+
 
         public void Gravar(Pessoa p)
         {
@@ -42,7 +41,7 @@ namespace DAL.Persistence
             catch (Exception ex)
             {
 
-                throw new Exception("Erro ao gravar cliente" + ex.Message);
+                throw new Exception(" - Erro ao gravar cliente - " + ex.Message);
             }
             finally
             {
@@ -56,8 +55,8 @@ namespace DAL.Persistence
             {
                 AbrirConexao();
 
-                Cmd = new SqlCommand("update Pessoa set Nome=@v1, Endereco=@v2, Email=@v3 where Codigo=@v4",Con);
-                
+                Cmd = new SqlCommand("update Pessoa set Nome=@v1, Endereco=@v2, Email=@v3 where Codigo=@v4", Con);
+
                 Cmd.Parameters.AddWithValue("@v1", p.Nome);
                 Cmd.Parameters.AddWithValue("@v2", p.Endereco);
                 Cmd.Parameters.AddWithValue("@v3", p.Endereco);
@@ -68,7 +67,7 @@ namespace DAL.Persistence
             catch (Exception ex)
             {
 
-                throw new Exception ("Erro ao atualizar cliente"+ex.Message);
+                throw new Exception(" - Erro ao atualizar cliente - " + ex.Message);
             }
             finally
             {
@@ -82,20 +81,20 @@ namespace DAL.Persistence
             {
                 AbrirConexao();
 
-                Cmd = new SqlCommand("delete from Pessoa where Codigo = @v1",Con);
+                Cmd = new SqlCommand("delete from Pessoa where Codigo = @v1", Con);
                 Cmd.Parameters.AddWithValue("@v1", Codigo);
             }
             catch (Exception ex)
             {
 
-                throw new Exception("Erro ao excluir o cliente"+ex.Message);
+                throw new Exception(" - Erro ao excluir o cliente - " + ex.Message);
             }
             finally
             {
                 FecharConexao();
             }
         }
-        
+
         public Pessoa PesquisarPorCodigo(int Codigo)//obter pessoa por codigo - chave primaria
         {
             try
@@ -109,7 +108,7 @@ namespace DAL.Persistence
 
                 Pessoa p = null;//cria ponteiro
 
-                if(Dr.Read())
+                if (Dr.Read())
                 {
                     p = new Pessoa();
 
@@ -124,7 +123,7 @@ namespace DAL.Persistence
             catch (Exception ex)
             {
 
-                throw new Exception("Código não encontrado"+ex.Message);
+                throw new Exception(" - Código não encontrado - " + ex.Message);
             }
             finally
             {
@@ -138,13 +137,13 @@ namespace DAL.Persistence
             {
                 AbrirConexao();
 
-                Cmd = new SqlCommand("selesct * form Pessoa",Con);
+                Cmd = new SqlCommand("selesct * form Pessoa", Con);
 
                 Dr = Cmd.ExecuteReader();
 
                 List<Pessoa> lista = new List<Pessoa>();//lista vazia
 
-                while(Dr.Read())
+                while (Dr.Read())
                 {
                     Pessoa p = new Pessoa();
 
@@ -156,13 +155,13 @@ namespace DAL.Persistence
                     lista.Add(p);
                 }
                 return lista;
-              
+
 
             }
             catch (Exception ex)
             {
 
-                throw new Exception ("Não foi possivel Listar os  clientes!"+ex.Message);
+                throw new Exception(" - Não foi possivel Listar os  clientes! - " + ex.Message);
             }
             finally
             {

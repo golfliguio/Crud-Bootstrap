@@ -27,7 +27,7 @@
     <form id="form1" runat="server">
         <div class="jumbotron">
 
-            <h1>Projeto CRUD - Controle de Clientes</h1>
+            <h1> Projeto CRUD - Controle de Clientes </h1>
 
                 Selecione a operação desejada :
             <asp:DropDownList ID="ddlMenu" runat="server">
