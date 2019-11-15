@@ -36,7 +36,8 @@
                 <asp:ListItem Value="1" Text="Cadastrar Cliente " />
                 <asp:ListItem Value="2" Text="Consultar Cliente " />
                 <asp:ListItem Value="3" Text="Obter os Dados do Cliente " />
-          
+
+                          
               </asp:DropDownList>
 
             <asp:Button ID="btnMenu" runat="server" Text="Acessar" CssClass="btn btn-light btn-sm" OnClick="btnAcessar" />

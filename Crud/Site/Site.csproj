@@ -78,7 +78,34 @@
     <Content Include="Default.aspx" />
     <Content Include="Pages\Cadastro.aspx" />
     <Content Include="Pages\Consulta.aspx" />
+    <Content Include="Pages\Content\bootstrap-grid.css" />
+    <Content Include="Pages\Content\bootstrap-grid.min.css" />
+    <Content Include="Pages\Content\bootstrap-reboot.css" />
+    <Content Include="Pages\Content\bootstrap-reboot.min.css" />
+    <Content Include="Pages\Content\bootstrap.css" />
+    <Content Include="Pages\Content\bootstrap.min.css" />
     <Content Include="Pages\Detalhes.aspx" />
+    <Content Include="Pages\Scripts\bootstrap.bundle.js" />
+    <Content Include="Pages\Scripts\bootstrap.bundle.min.js" />
+    <Content Include="Pages\Scripts\bootstrap.js" />
+    <Content Include="Pages\Scripts\bootstrap.min.js" />
+    <Content Include="Pages\Scripts\esm\popper-utils.js" />
+    <Content Include="Pages\Scripts\esm\popper-utils.min.js" />
+    <Content Include="Pages\Scripts\esm\popper.js" />
+    <Content Include="Pages\Scripts\esm\popper.min.js" />
+    <None Include="Pages\Scripts\jquery-3.0.0-vsdoc.js" />
+    <Content Include="Pages\Scripts\jquery-3.0.0.js" />
+    <Content Include="Pages\Scripts\jquery-3.0.0.min.js" />
+    <Content Include="Pages\Scripts\jquery-3.0.0.slim.js" />
+    <Content Include="Pages\Scripts\jquery-3.0.0.slim.min.js" />
+    <Content Include="Pages\Scripts\popper-utils.js" />
+    <Content Include="Pages\Scripts\popper-utils.min.js" />
+    <Content Include="Pages\Scripts\popper.js" />
+    <Content Include="Pages\Scripts\popper.min.js" />
+    <Content Include="Pages\Scripts\umd\popper-utils.js" />
+    <Content Include="Pages\Scripts\umd\popper-utils.min.js" />
+    <Content Include="Pages\Scripts\umd\popper.js" />
+    <Content Include="Pages\Scripts\umd\popper.min.js" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -101,6 +128,31 @@
     <Content Include="Content\bootstrap-reboot.css.map" />
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
+    <Content Include="Pages\Content\bootstrap-grid.css.map" />
+    <Content Include="Pages\Content\bootstrap-grid.min.css.map" />
+    <Content Include="Pages\Content\bootstrap-reboot.css.map" />
+    <Content Include="Pages\Content\bootstrap-reboot.min.css.map" />
+    <Content Include="Pages\Content\bootstrap.css.map" />
+    <Content Include="Pages\Content\bootstrap.min.css.map" />
+    <Content Include="Pages\Scripts\bootstrap.bundle.js.map" />
+    <Content Include="Pages\Scripts\bootstrap.bundle.min.js.map" />
+    <Content Include="Pages\Scripts\bootstrap.js.map" />
+    <Content Include="Pages\Scripts\bootstrap.min.js.map" />
+    <Content Include="Pages\Scripts\esm\popper-utils.js.map" />
+    <Content Include="Pages\Scripts\esm\popper-utils.min.js.map" />
+    <Content Include="Pages\Scripts\esm\popper.js.map" />
+    <Content Include="Pages\Scripts\esm\popper.min.js.map" />
+    <Content Include="Pages\Scripts\jquery-3.0.0.min.map" />
+    <Content Include="Pages\Scripts\jquery-3.0.0.slim.min.map" />
+    <Content Include="Pages\Scripts\popper-utils.js.map" />
+    <Content Include="Pages\Scripts\popper-utils.min.js.map" />
+    <Content Include="Pages\Scripts\popper.js.map" />
+    <Content Include="Pages\Scripts\popper.min.js.map" />
+    <Content Include="Pages\Scripts\README.md" />
+    <Content Include="Pages\Scripts\umd\popper-utils.js.map" />
+    <Content Include="Pages\Scripts\umd\popper-utils.min.js.map" />
+    <Content Include="Pages\Scripts\umd\popper.js.map" />
+    <Content Include="Pages\Scripts\umd\popper.min.js.map" />
     <None Include="Scripts\jquery-3.0.0-vsdoc.js" />
     <Content Include="Scripts\jquery-3.0.0.js" />
     <Content Include="Scripts\jquery-3.0.0.min.js" />
@@ -174,6 +226,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="Pages\Scripts\index.d.ts" />
     <TypeScriptCompile Include="Scripts\index.d.ts" />
   </ItemGroup>
   <ItemGroup>
