@@ -20,13 +20,17 @@ namespace Site.Pages
 
                 p.Nome = txtNome.Text;
                 p.Endereco = txtEndereco.Text;
-                p.Email = txtEndereco.Text;
+                p.Email = txtEmail.Text;
 
 
                 PessoaDal d = new PessoaDal();
                 d.Gravar(p);//gravar pessoa
 
                 lblMenssagem.Text = " Cliente " + p.Nome + " - Cadastrado com sucesso!!";
+
+                txtNome.Text = " ";
+                txtEndereco.Text = " ";
+                txtEmail.Text = " ";
             }
             catch (Exception ex)
             {

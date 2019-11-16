@@ -2,10 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\Crud",
-    "\\Crud\\DAL",
     "\\Crud\\DAL\\Model",
-    "\\Crud\\DAL\\Persistence"
+    "\\Crud\\DAL\\Persistence",
+    "\\Crud\\Site",
+    "\\Crud\\Site\\Pages"
   ],
-  "SelectedNode": "\\Crud\\dbo.Pessoa.sql",
+  "SelectedNode": "\\Crud\\Site\\Site.csproj",
   "PreviewInSolutionExplorer": false
 }

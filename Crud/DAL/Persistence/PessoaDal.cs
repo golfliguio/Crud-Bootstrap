@@ -59,7 +59,7 @@ namespace DAL.Persistence
 
                 Cmd.Parameters.AddWithValue("@v1", p.Nome);
                 Cmd.Parameters.AddWithValue("@v2", p.Endereco);
-                Cmd.Parameters.AddWithValue("@v3", p.Endereco);
+                Cmd.Parameters.AddWithValue("@v3", p.Email);
                 Cmd.Parameters.AddWithValue("@v4", p.Codigo);
 
                 Cmd.ExecuteNonQuery();
@@ -137,7 +137,7 @@ namespace DAL.Persistence
             {
                 AbrirConexao();
 
-                Cmd = new SqlCommand("selesct * form Pessoa", Con);
+                Cmd = new SqlCommand("select * from Pessoa", Con);
 
                 Dr = Cmd.ExecuteReader();
 
