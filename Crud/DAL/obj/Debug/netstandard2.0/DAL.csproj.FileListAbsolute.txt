@@ -5,3 +5,4 @@ D:\Projects\CrudBootstrap\Crud\DAL\obj\Debug\netstandard2.0\DAL.AssemblyInfoInpu
 D:\Projects\CrudBootstrap\Crud\DAL\obj\Debug\netstandard2.0\DAL.AssemblyInfo.cs
 D:\Projects\CrudBootstrap\Crud\DAL\obj\Debug\netstandard2.0\DAL.dll
 D:\Projects\CrudBootstrap\Crud\DAL\obj\Debug\netstandard2.0\DAL.pdb
+D:\Projects\CrudBootstrap\Crud\DAL\obj\Debug\netstandard2.0\DAL.csprojAssemblyReference.cache

@@ -55,13 +55,13 @@ namespace DAL.Persistence
             {
                 AbrirConexao();
 
-                Cmd = new SqlCommand("update Pessoa set Nome=@v1, Endereco=@v2, Email=@v3 where Codigo=@v4", Con);
+               
+               Cmd = new SqlCommand("update Pessoa set Nome=  @v1, Endereco= @v2, Email= @v3 where Codigo= @v4", Con);
 
                 Cmd.Parameters.AddWithValue("@v1", p.Nome);
                 Cmd.Parameters.AddWithValue("@v2", p.Endereco);
                 Cmd.Parameters.AddWithValue("@v3", p.Email);
                 Cmd.Parameters.AddWithValue("@v4", p.Codigo);
-
                 Cmd.ExecuteNonQuery();
             }
             catch (Exception ex)
@@ -81,8 +81,14 @@ namespace DAL.Persistence
             {
                 AbrirConexao();
 
-                Cmd = new SqlCommand("delete from Pessoa where Codigo = @v1", Con);
-                Cmd.Parameters.AddWithValue("@v1", Codigo);
+                Cmd = new SqlCommand("delete  from Pessoa where Codigo = @v1", Con);
+
+
+                Cmd.Parameters.AddWithValue("@v1", Codigo) ;
+
+              
+                Cmd.ExecuteNonQuery();
+
             }
             catch (Exception ex)
             {
@@ -105,6 +111,7 @@ namespace DAL.Persistence
 
                 Cmd.Parameters.AddWithValue("@v1", Codigo);
 
+                Dr = Cmd.ExecuteReader();//execuçao da leitura do bd
 
                 Pessoa p = null;//cria ponteiro
 

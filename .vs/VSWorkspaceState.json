@@ -4,9 +4,8 @@
     "\\Crud",
     "\\Crud\\DAL\\Model",
     "\\Crud\\DAL\\Persistence",
-    "\\Crud\\Site",
     "\\Crud\\Site\\Pages"
   ],
-  "SelectedNode": "\\Crud\\Site\\Site.csproj",
+  "SelectedNode": "\\Crud\\Crud.sln",
   "PreviewInSolutionExplorer": false
 }
