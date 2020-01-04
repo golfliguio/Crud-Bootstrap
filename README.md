@@ -1,4 +1,4 @@
-<h1>CRUD utilizando Bootstrap</H1>
+﻿<h1>CRUD utilizando Bootstrap</H1>
 
 
 <p>Repositório com exemplo de aplicação Web CRUD simples, simulando um app de controle de clientes, que executa operações básicas na camada de persistência. Foi utilizado o conceito DAL no desenvolvimento.</p>
@@ -12,4 +12,5 @@ Recomendo o estudo da documentação do framework Bootstrap para melhor entendim
 
 OBS. O script sql se encontra disponivel em : https://github.com/golfliguio/CrudBootstrap/blob/master/Crud/dbo.Pessoa.sql
 
-Em caso de dúvidas me coloco a disposição para contato via e-mail :  *golfliguio@hotmail.com* . 
+Em caso de dúvidas me coloco a disposição para contato via e-mail :   *geovany.silva.araujo@gmail.com* . 
+
